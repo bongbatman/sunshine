@@ -1,0 +1,41 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".ForecastFragment"
+
+    android:elevation="@dimen/appbar_elevation">
+    
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/forecast_recycler_view"
+        style="@style/ForecastListStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:divider="@null"
+
+        />
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--style="@style/ForecastListStyle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@android:id/list"-->
+        <!--/>-->
+    
+    
+    <TextView
+        android:id="@+id/forecast_recycler_view_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="16dp"
+        android:gravity="center_horizontal"/>
+
+
+
+
+</FrameLayout>
